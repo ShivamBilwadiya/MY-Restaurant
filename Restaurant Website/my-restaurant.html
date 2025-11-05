@@ -4,9 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my-restaurant</title>
+    <link rel="stylesheet" href="./my-restaurant.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Shojumaru&display=swap" rel="stylesheet">
+    <style>
+       .home-page {
+        background-image: url(./home-bg.png);
+        background-repeat: no-repeat;
+        ;
+        height: 800px ;
+       }
+       .navbar-background {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid rgb(149, 149, 149);
+        /* background-color: rgb(47, 44, 44); */
+        font-family: "Story Script", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+       .navbar{
+        /* background-color: aqua; */
+        display:flex;
+        justify-content: space-around;
+        align-content: center;
+       }
+       .navbar a:hover{
+        text-decoration: underline;
+        color: orange;
+       }
+       .navbar a{
+        text-decoration: solid;
+        color: rgb(255, 255, 255);
+       }
+       #booking-button{
+        background-color: orange;
+       }
+      #booking-button:hover{
+        background-color: rgb(0, 0, 0);
+      }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Restaurant</h1>
-    <p>Experience the best dining with us!</p>   
+  <div class="home-page" style="">
+   <div class="navbar-background" style="">
+    <div class="logo">
+        <a href="">
+            <img src="./logo.png" alt="My Restaurant Logo" style="max-width: 900px;height: 100px;"/>
+        </a>
+    </div>
+    <nav class="navbar">
+        <div class="menu" style="margin-inline: 10px;">
+            <h3 >
+            <a href="#menu">Menu</a>
+            </h3>
+        </div>
+        <div class="about" style="margin-inline: 10px;">
+            <h3>
+            <a href="#about" >About</a>
+        </h3>
+        </div>
+        <div class="blog" style="margin-inline: 10px;">
+            <h3>
+            <a href="#blog" >Blog</a>
+        </h3>
+        </div>
+        <div class="gallery" style="margin-inline: 10px;">
+            <h3>
+            <a href="#gallery" >Gallery</a>
+        </h3>
+        </div>
+        <div class="contact" style="margin-inline: 10px;">
+            <h3>
+            <a href="#contact" >Contact</a>
+        </h3>
+        </div>
+    </nav>
+    <button id="booking-button" style="height: 65px;width: 175px; border-radius: 30px; align-self: center;font-size: 20px;
+  font-family: Story Script, sans-serif;font-weight:750;color: aliceblue;"> Book a Table</button>
+   </div>
+  </div> 
 </body>
 </html>
