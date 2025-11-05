@@ -10,23 +10,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Borel&family=Shojumaru&display=swap" rel="stylesheet">
     <style>
        .home-page {
-        background-image: url(./home-bg.png);
+        text-align: center;
+        background-image: url("./resturant-page1.jpg");
+        /* background-size: cover; */
         background-repeat: no-repeat;
-        ;
-        height: 800px ;
+        height: ;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
        }
        .navbar-background {
+        /* text-align: center; */
         display:flex;
         justify-content: space-around;
         align-items: center;
         border: 2px solid rgb(149, 149, 149);
-        /* background-color: rgb(47, 44, 44); */
+
         font-family: "Story Script", sans-serif;
         font-weight: 400;
         font-style: normal;
         }
        .navbar{
-        /* background-color: aqua; */
+        /* text-align: center; */
         display:flex;
         justify-content: space-around;
         align-content: center;
@@ -48,8 +54,9 @@
     </style>
 </head>
 <body>
-  <div class="home-page" style="">
-   <div class="navbar-background" style="">
+  <section class="home-page">  
+  <div >
+   <div class="navbar-background" >
     <div class="logo">
         <a href="">
             <img src="./logo.png" alt="My Restaurant Logo" style="max-width: 900px;height: 100px;"/>
@@ -86,5 +93,6 @@
   font-family: Story Script, sans-serif;font-weight:750;color: aliceblue;"> Book a Table</button>
    </div>
   </div> 
+    </section>
 </body>
 </html>
