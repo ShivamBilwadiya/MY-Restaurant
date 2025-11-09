@@ -9,6 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Borel&family=Shojumaru&display=swap" rel="stylesheet">
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         .section{
             width:1512px;
             height: 860px;
@@ -86,27 +90,20 @@
       .special-dishes h2 {
         font-size: 2.5rem;
         font-weight: 700;
-        color: #1b1b1b;
+        color: rgb(26, 26, 26);
         }
 
       .special-dishes .subtitle {
         margin-top: 10px;
-        color: #777;
+        color: rgb(64, 64, 64);
         max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 10px;
+        margin-right: 10px;
         font-size: 1rem;
         }
 
-      .dish-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 40px;
-        margin-top: 60px;
-        }
-
       .dish-card {
-        background: #fff;
+        background: white;
         border-radius: 20px;
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
         padding: 30px 20px 40px;
@@ -115,7 +112,7 @@
 
       .dish-card:hover {
         transform: translateY(-8px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 25px rgba(255, 255, 255, 0.5);
         }
 
       .dish-img {
@@ -136,8 +133,8 @@
         position: absolute;
         top: 0;
         right: 35%;
-        background: #1b1b1b;
-        color: #fff;
+        background: black;
+        color: white;
         font-weight: 600;
         border-radius: 50%;
         padding: 8px 14px;
@@ -148,14 +145,151 @@
       .dish-card h3 {
         font-size: 1.1rem;
         font-weight: 600;
-        color: #222;
+        color: rgb(41, 40, 40);
         margin-bottom: 10px;
         }
 
       .dish-card p {
-        color: #777;
+        color: rgb(93, 92, 92);
         font-size: 0.9rem;
         line-height: 1.5;
+        }
+     .footer {
+        color: white;
+        padding: 50px 80px;
+        position: relative;
+        overflow: hidden;
+        }
+
+     .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 50px;
+        }
+
+     .logo-2 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        }
+
+     .logo-2 img {
+        width: 35px;
+        }
+
+     .logo-2 h2 {
+        font-size: 22px;
+        font-weight: 700;
+        }
+
+     .footer-about {
+        flex: 1 1 300px;
+        }
+
+     .footer-about p {
+        margin: 15px 0;
+        line-height: 1.6;
+        color: rgb(86, 85, 85);
+        }
+
+     .footer-about a {
+        color: rgb(66, 66, 66);
+        text-decoration: underline;
+        }
+
+     .hours h4 {
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 25px;
+        }
+
+     .schedule {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        }
+
+     .schedule div p:first-child {
+        font-weight: 500;
+        }
+
+     .footer-links {
+        display: flex;
+        flex: 1 1 500px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        }
+
+     .footer-links h4 {
+        font-weight: 700;
+        margin-bottom: 10px;
+        }
+
+     .footer-links ul li {
+        margin-bottom: 8px;
+        }
+
+     .footer-links ul li a {
+        text-decoration: none;
+        color: rgb(65, 65, 65);
+        transition: 0.3s;
+        }
+
+     .footer-links ul li a:hover {
+        color: orange;
+        }
+
+     .social .social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+        }
+
+     .social-icons a {
+        border: 1px solid rgb(56, 56, 56);
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(53, 52, 52);
+        transition: 0.3s;
+        }
+
+     .social-icons a:hover {
+        background-color: orange;
+        color: white;
+        border-color: orange;
+        }
+
+     .footer-bottom {
+        border-top: 1px solid white;
+        margin-top: 40px;
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+
+     .footer-bottom p {
+        color: rgb(103, 103, 103);
+        }
+
+     .footer-bottom span {
+        font-weight: 700;
+        }
+
+     .footer-bottom .terms a {
+        text-decoration: none;
+        color: rgb(78, 78, 78);
+        margin-left: 20px;
+        }
+
+     .footer-bottom .terms a:hover {
+        text-decoration: underline;
         }
     
     </style>
@@ -217,14 +351,14 @@
   </div> 
    <div id="page" style="display: flex;justify-content: center;background-color: white;">
   <section class="section" id="menu">
-    <div class="" style="border:4px solid red;">
-      <h2>Our Special Dishes</h2>
-      <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+    <div class="" style="">
+      <h1 style="color: #fff;text-align: center;margin-top: 40px;font-size:;">Our Special Dishes</h>
+      <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod tempor incididunt</p>
 
       <div class="dish-grid">
         <div class="dish-card">
           <div class="dish-img">
-            <img src="" alt="">
+            <img src="./food.jpg" alt="">
             <span class="price">$12</span>
           </div>
           <h3>Lumpia with Sauce</h3>
@@ -233,7 +367,7 @@
 
         <div class="dish-card">
           <div class="dish-img">
-            <img src="" alt="">
+            <img src="./food2.jpg" alt="">
             <span class="price">$12</span>
           </div>
           <h3>Fish and Veggie</h3>
@@ -242,7 +376,7 @@
 
         <div class="dish-card">
           <div class="dish-img">
-            <img src="" alt="">
+            <img src="./food3.jpg" alt="">
             <span class="price">$12</span>
           </div>
           <h3>Tofu Chili</h3>
@@ -251,7 +385,7 @@
 
         <div class="dish-card">
           <div class="dish-img">
-            <img src="" alt="">
+            <img src="./food4.jpg" alt="">
             <span class="price">$12</span>
           </div>
           <h3>Egg and Cucumber</h3>
@@ -259,6 +393,82 @@
         </div>
       </div>
     </div>
+     <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <div class="logo-2">
+          <img src="./logo.png" alt="logo-2">
+          <h2>restaurant</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. 
+          <a href="#">Learn more</a>
+        </p>
+
+        <div class="hours">
+          <h4>OPENING HOURS</h4>
+          <div class="schedule">
+            <div>
+              <p>Monday - Friday</p>
+              <p>8:00 am to 9:00 pm</p>
+            </div>
+            <div>
+              <p>Saturday</p>
+              <p>8:00 am to 9:00 pm</p>
+            </div>
+            <div>
+              <p>Sunday</p>
+              <p>CLOSED</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h4>NAVIGATION</h4>
+          <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Main dishes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>DISHES</h4>
+          <ul>
+            <li><a href="#">Fish &amp; Veggies</a></li>
+            <li><a href="#">Tofu Chili</a></li>
+            <li><a href="#">Egg &amp; Cucumber</a></li>
+            <li><a href="#">Lumpia w/Sauce</a></li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <h4>FOLLOW US</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i>
+                <img src="./facebook-logo.png" alt="facebook" style="width:23px; height:23px;">
+            </a>
+            <a href="#"><i class="fab fa-instagram"></i>
+                <img src="./instagram.png" alt="instagram" style="width:20px; height:20px;">
+            </a>
+            <a href="#"><i class="fab fa-twitter"></i>
+                <img src="./twitter.png" alt="twitter" style="width:23px; height:23px;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p> 2025 Restaurants. All Right Reserved. Designed by <span>Shivam</span></p>
+      <div class="terms">
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
   </section> 
   </div>
     
